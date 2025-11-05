@@ -272,7 +272,7 @@ export const TaskForm = ({ groups, onSubmit, onCreateGroup, selectedGroupId }: T
             <Label htmlFor="deadline">Deadline (tùy chọn)</Label>
             <Input
               id="deadline"
-              type="date"
+              type="datetime-local"
               value={deadline}
               onChange={(e) => setDeadline(e.target.value)}
             />

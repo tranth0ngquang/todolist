@@ -252,7 +252,7 @@ export const TaskItem = ({ task, group, groups, onUpdate, onDelete, onToggle, in
                   <Calendar className="w-3 h-3" />
                   <span>Deadline:</span>
                   <Input
-                    type="date"
+                    type="datetime-local"
                     value={task.deadline || ''}
                     onChange={(e) => handleDeadlineChange(e.target.value)}
                     className="w-auto h-6 px-1 text-xs border-0 bg-transparent hover:bg-gray-50 focus:bg-white focus:border-gray-300"

@@ -199,7 +199,7 @@ export const QuickYouTubeAdd = ({ groups, onSubmit, onCreateGroup }: QuickYouTub
           <Label htmlFor="deadline-quick">Deadline (tùy chọn)</Label>
           <Input
             id="deadline-quick"
-            type="date"
+            type="datetime-local"
             value={deadline}
             onChange={(e) => setDeadline(e.target.value)}
           />
