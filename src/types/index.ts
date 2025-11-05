@@ -33,6 +33,7 @@ export type AppAction =
   | { type: 'TOGGLE_TASK'; payload: string }
   | { type: 'SET_GROUPS'; payload: Group[] }
   | { type: 'ADD_GROUP'; payload: Group }
+  | { type: 'DELETE_GROUP'; payload: string }
   | { type: 'SET_SELECTED_GROUP'; payload: string | null }
   | { type: 'SET_SEARCH_QUERY'; payload: string }
   | { type: 'IMPORT_DATA'; payload: { tasks: Task[]; groups: Group[] } };

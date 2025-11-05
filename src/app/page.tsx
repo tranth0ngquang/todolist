@@ -23,6 +23,7 @@ export default function Home() {
     deleteTask,
     toggleTask,
     createGroup,
+    deleteGroup,
     setSelectedGroup,
     setSearchQuery,
     importData
@@ -73,6 +74,7 @@ export default function Home() {
               searchQuery={searchQuery}
               onGroupChange={setSelectedGroup}
               onSearchChange={setSearchQuery}
+              onDeleteGroup={deleteGroup}
             />
 
             <Tabs defaultValue="incomplete" className="w-full">

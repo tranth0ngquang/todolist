@@ -64,6 +64,14 @@ export const appReducer = (state: AppState, action: AppAction): AppState => {
         groups: [...state.groups, action.payload]
       };
     
+    case 'DELETE_GROUP':
+      return {
+        ...state,
+        groups: state.groups.filter(group => group.id !== action.payload),
+        tasks: state.tasks.filter(task => task.groupId !== action.payload),
+        selectedGroupId: state.selectedGroupId === action.payload ? null : state.selectedGroupId
+      };
+    
     case 'SET_SELECTED_GROUP':
       return {
         ...state,

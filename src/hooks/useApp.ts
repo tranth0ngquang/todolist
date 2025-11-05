@@ -116,6 +116,10 @@ export const useApp = () => {
     return group;
   };
 
+  const deleteGroup = (groupId: string) => {
+    dispatch({ type: 'DELETE_GROUP', payload: groupId });
+  };
+
   const setSelectedGroup = (groupId: string | null) => {
     dispatch({ type: 'SET_SELECTED_GROUP', payload: groupId });
   };
@@ -162,6 +166,7 @@ export const useApp = () => {
     deleteTask,
     toggleTask,
     createGroup,
+    deleteGroup,
     setSelectedGroup,
     setSearchQuery,
     importData
